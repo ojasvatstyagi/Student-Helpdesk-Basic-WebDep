@@ -4,6 +4,61 @@
   <title>My Website</title>
   <link href="style_home.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    /* Style the dropdown button */
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: #f2f2f2;
+      background-color: inherit;
+      margin: 0;
+      padding: 14px 20px;
+      text-align: center;
+    }
+
+    /* Change the color of the dropdown button on hover */
+    .dropdown:hover .dropbtn {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Style the dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Style the links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      text-align:center;
+    }
+
+    /* Change the color of the dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Show the dropdown menu when the dropdown button is clicked */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <div class="navbar">
@@ -13,6 +68,19 @@
     </a>
 
     <a href="study_page.html" ><i class="material-icons">school</i>Educational Material|</a>
+    <!--<a href="study_page.html" ><i class="material-icons">school</i>Faculty Details|</a>-->
+    <div class="dropdown"> 
+        <a><i class="material-icons">school</i>Faculty Details|</a>
+      <div class="dropdown-content">
+        <a href="cse.html">CSE</a>
+        <a href="eac.html">EAC</a>
+        <a href="aie.html">AIE</a>
+        <a href="ece.html">ECE</a>
+        <a href="eee.html">EEE</a>
+        <a href="mech.html">MECH</a>
+        
+      </div>
+    </div>
       <a href="#about"><i class="material-icons">format_align_center</i> About|</a>
       <a href="#services"><i class="material-icons">inbox</i>Services|</a>
       <a href="#contacts"><i class="material-icons">call</i>Contacts|</a>
@@ -25,25 +93,19 @@
     <div class="details-box" id="about">
       <h2>About</h2>
       <p>At Amrita Vishwa Vidyapeetham we are dedicated to providing academic information to our valued students. With a passion for excellence and a commitment to delivering exceptional results, we strive to meet and exceed your expectations.
-           Our team of highly skilled students bring 1 year of experience and expertise to this project.
-        <br>
-           We believe in staying ahead of the curve by embracing the latest technologies, ensuring that we provide you with innovative solutions tailored to your needs.
-           Student satisfaction is at the heart of everything we do. <br>
-           We value your trust and strive to build long-term relationships based on transparency, integrity, and open communication. We are here to support you and 
-           help you achieve your goals.
-           We invite you to explore our website and discover how Amrita Vishwa Vidyapeetham can assist you in reaching new heights. 
-           <br>
-           If you have any questions or would like to discuss your specific requirements, please don't hesitate to contact us.
+           Our team of highly skilled students bring 1 year of experience and expertise to this project. We believe in staying ahead of the curve by embracing the latest technologies, ensuring that we provide you with innovative solutions tailored to your needs.
+           Student satisfaction is at the heart of everything we do. We value your trust and strive to build long-term relationships based on transparency, integrity, and open communication. We are here to support you and help you achieve your goals.
+           We invite you to explore our website and discover how Amrita Vishwa Vidyapeetham can assist you in reaching new heights. If you have any questions or would like to discuss your specific requirements, please don't hesitate to contact us.
            We look forward to the opportunity to work with you and be a part of your success story.
            Thank you for visiting!
       </p>
 </div>
     <div class="details-box" id="services">
       <h2>Services</h2>
-      <p>At Amrita Vishwa Vidyapeetham, we offer a comprehensive range of services designed to meet your specific needs and exceed your expectations. With a team of highly skilled students and a commitment to excellence, we deliver results that drive success for our students. Explore our services below:<br>
+      <p>At Amrita Vishwa Vidyapeetham, we offer a comprehensive range of services designed to meet your specific needs and exceed your expectations. With a team of highly skilled students and a commitment to excellence, we deliver results that drive success for our students. Explore our services below:
        <br> 1.	Study Material:
-          We are providing the study material for first years for all branches. It will be easier for the students to access the study material and score well.<br>
-       <br> 2.	Faculty:
+          We are providing the study material for first years for all branches. It will be easier for the students to access the study material and score well.
+        <br>2.	Faculty:
           We will provide the contact details of the teachers for emergency purposes.
           Our team is dedicated to your success and will work closely with you throughout the process, providing regular updates and transparent communication.
           Contact us today to discuss how we can help you achieve your goals and propel your business forward.
@@ -54,7 +116,7 @@
       <p>Aarav Vashishtha: 1234567890<br>
         Ojas Tyagi: 0124578963<br>
         Shail Garg: 1025874369<br>
-        Varshita Velumury: 8547912306<br>
+        Varshita Velumury: 8547912306
       </p>
     </div>
   </div>
