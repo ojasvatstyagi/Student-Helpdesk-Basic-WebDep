@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>personal_info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script>
+    import * as name from './sign_up.js';
+    document.getElementById("fullName").value = name
+  </script> -->
+  <style>
+    *{
+      margin: 0;
+
+    }
+    center{
+    width: 30x;
+    justify-content: center;
+    }
+    tr {
+    width: max-content;
+  }
+
+  label {
+    display: inline-block;
+    width: 200px; 
+    text-align: right;
+    margin-right: 10px; 
+    margin: 10px;
+  }
+  
+  input[type="text"] {
+    width: 300px; 
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+    size: 50;
+  }
+
+  p.top {
+    border: 1px solid;
+    width: 725px;
+    background-color:#d6dde7;
+    border-style: hidden;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 1px solid blue;
+  }
+  .footer  {
+   margin-left:0px;
+    padding: 0px;
+    background-color: 	#211a23;
+    color: #edf4f5;
+    height: 50px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+  form {
+    float: left;
+    width: 50%;
+  }
+
+  .datalist-container {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .datalist-right {
+    float: right;
+    margin-top: 20px;
+  }
+.sub{
+    font-size: small;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+#centered{
+    width: 300px;
+    align-content: center;
+}
+
+.personal {
+  float: left;
+}
+
+div.p .color {
+  border:1px solid black;
+  background-color: blue;
+}
+.container {
+  text-align: center;
+}
+
+.marg {
+  margin-left: 240px;
+}
+
+
+  main{
+    margin-left:255px;
+    
+  }
+
+
+input[type="submit"],
+input[type="reset"] {
+  display: flexbox;
+  background-color:green;
+  color:white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  translate: 700px;
+}
+input[type="reset"] {
+  background-color:blue;
+}
+#main{
+  width: 100%; 
+  background-color: #EEE1B0;
+  padding: 10px;
+  border-left: 3px solid black;
+}
+#photography{
+  background-color:rgb(34, 34, 146);
+  color:white; 
+  border: 1px;
+  margin-left:20px;
+}
+
+
+</style>
+    </head>
+    <body>
+      <p id="main">If you don't have certificate please <a href="#">download</a> and Upload this with out any change in the format or name.</p>
+        <form>
+            <div>
+                <p class="top" style="color:rgb(27, 86, 145);"> General information</p>
+                <label>First Name<sup style="color:red" >*</sup> </label>
+                <input type="text" name="first_name" id="fullName">
+                <br>
+                <label>Middle Name </label>
+                <input type="text" name="middle_name">
+                <br>
+                <label>Last Name/Surname<sup style="color:red" >*</sup> </label>
+                <input type="text" name="last_name">
+                <br>
+                <label>Full Name as per Aadhaar<sup style="color:red" >*</sup> </label>
+                <input type="text" name="full_name_as_per_aadhaar">
+                <br>
+                <label>Father's Name<sup style="color:red" >*</sup> </label>
+                <input type="text" name="father_name">
+                <br>
+                <label>Mother's Name<sup style="color:red" >*</sup> </label>
+                <input type="text" name="mother_name">
+                <br>
+                <label>Date of Birth<sup style="color:red" >*</sup> </label>
+                <input type="date" name="date_of_birth">
+            </div>
+        </form>
+
+        <form>
+            <div class="personal">
+                <p class="top" style="color:rgb(27, 86, 145);"> Personal information</p>
+               <label>gender<sup style="color:red" >*</sup> </label>
+               <input type="radio" name="gender">male
+               <input type="radio" name="gender">Female
+               <input type="radio" name="gender">others
+               <br>
+               <label>Marital status<sup style="color:red" >*</sup> </label>
+              <input type="radio" name="marital">single
+             <input type="radio" name="marital">married
+             <input type="radio" name="marital">Divorce
+             <input type="radio" name="maritial">Widow
+             <input type="radio" name="marital">Widower
+               <br>
+               <label>Religion<sup style="color:red" >*</sup> </label>
+             <input type="text" list="relgion">
+             <datalist id="relgion">
+                <option value="Hinduism">Hinduism
+                </option><option value="muslims">muslims
+                </option><option value="Christians">Christians
+                </option><option value="Sikhs">Sikhs
+                </option><option value="Buddhist">Buddhist
+                </option><option value="Jains">Jains
+                </option><option value="adhrents">adhrents
+              </option></datalist>
+              <br>
+              <label>Community<sup style="color:red" >*</sup> </label>
+              <input type="text" list="Community">
+              <datalist id="Community">
+                 <option value="Genral">Genral
+                 </option><option value="OBC">OBC
+                </option><option value="SC/ST">SC/ST
+               </option></datalist>
+              <br>
+              <label>Mother tongue<sup style="color:red" >*</sup> </label>
+              <input type="text" list="Mothertongue">
+              <datalist id="Mothertongue">
+                 <option value="Telugu">Telugu
+                 </option><option value="Hindi">Hindi
+                 </option><option value="English">English
+                 </option><option value="marathi">marathi
+                 </option><option value="urdhu">urdhu
+               </option></datalist>
+               <br>
+               <label>Blood group<sup style="color:red" >*</sup> </label>
+              <input type="text" list="Blood group">
+              <datalist id="Blood group">
+                 <option value="O+">O+
+                 </option><option value="o-">o-
+                 </option><option value="A+">A+
+                 </option><option value="A-">A-
+                 </option><option value="B+">B+
+                </option><option value="B-">B-
+                </option><option value="AB+">AB+
+                </option><option value="AB-">AB-
+               </option></datalist>
+               <br>
+               <label>Langauges Known<sup style="color:red" >*</sup> </label>
+               <input type="text" name="Langauges">
+            </div>
+            <p class="sub" style="margin-left: 250px; color:rgb(158, 158, 158)">[Multiple selection possible]</p>
+        </form>
+
+<section>
+<div>
+    <h3>
+      <span id="photography">Upload photograph</span>
+    </h3>
+    <p><b>Steps to Upload the photography</b></p>
+    <ul>
+        <li>click on <b>"Browse"</b> or <b> "choose" </b> button</li>
+        <li>Select the type as [jpg format 300kb or less]</li>
+        <li>you can see the photo image once the file is uploded.</li>
+    </ul>
+</div>
+<div>
+    <p><b>Note: the photo must be clear abd the face postion to the centered in the image showing the fulll face and looking directly to the camera  failing which the application will be rejected</b></p>
+</div>
+<div class="marg">
+  <div class="flux">
+      <p>
+        Photograph <sup style="color:red">*</sup>
+      </p>
+      <input type="file" id="myfile" name="filenamme" required>
+  </div>
+
+  <br>
+  <img src="msg972294777-5740.jpg" width="100px" height="120px" alt="Image">
+</div>
+
+    </div></section>
+
+    <input type="submit" name="save">
+    <input type="reset" name="cancel">
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+      <p background-color="black" color="white">
+      <h5 text-align="left">ICTS © Bengaluru Campus - 2023</h5>
+      </p>
+    </div>
+</body>
+</html>
