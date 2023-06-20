@@ -113,6 +113,8 @@ body {
 
   .details-box p {
     color:#ffffff ;
+    line-height:50px;
+    word-spacing:15px;
   }
   .footer  {
      margin-left:0px;
