@@ -8,4 +8,19 @@ $password=$_POST["password"];
 $repeatPassword=$_POST["repeatPassword"];
 $sql="insert into account values('".$firstName."','".$lastName."','".$userName."','".$email."','".$password."','".$repeatPassword."');";
 $rs = mysqli_query($con,$sql);
-if($rs){ echo '<!DOCTYPE html><html>    <head>        <title>My Web page</title>        <link rel="stylesheet" href="6.css">     </head>     <body>        <div class="container">            <div class="content">                <h1>The Account is Successfully Created!!</h1>                <a href="uidpro.html"> Click here to go to login page </a>             </div>          </div>      </body> </html>            '; }?>
+if($rs){ 
+  echo '<!DOCTYPE html><html>    
+  <head>        
+  <title>My Web page</title>        
+  <link rel="stylesheet" href="sign_up.css">     
+  </head>     
+  <body>        
+  <div class="container">            
+  <div class="content">                
+  <h1>The Account is Successfully Created!!</h1>                
+  <a href="sign_up_page.html"> Click here to go to login page </a>             
+  </div>          
+  </div>      
+  </body> 
+  </html>            
+  '; }?>
